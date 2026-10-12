@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Lume Cat Café</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">𝓛𝓾𝓶𝓮 ₍^. .^₎⟆</h1>
+            <ul class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="cats.html">Our Cats</a>
+                <a href="booking.html">Book a Visit</a>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Page heading -->
+    <section class="page-header">
+        <h4>OUR MENU</h4>
+        <h2>𝑻𝒓𝒆𝒂𝒕𝒔 & 𝑫𝒓𝒊𝒏𝒌𝒔 ‧₊˚ 🍮 ⋅ ☆🍹</h2>
+        <h4>Enjoy your favorite drinks and sweet treats while spending time with our furry friends.</h4>
+    </section>
+
+
+    <!-- Coffee & Drinks -->
+    <section class="menu-section">
+        <h2>𝑪𝒐𝒇𝒇𝒆𝒆 & 𝑫𝒓𝒊𝒏𝒌𝒔⋆☕︎ ˖</h2>
+
+        <div class="menu-items">
+            <div class="menu-card">
+                <h3>Classic Coffee</h3>
+                <p>Freshly brewed coffee.</p>
+                <span>Rs. 350</span>
+                <button onclick="addToCart('Classic Coffee', 350)">Add to Cart</button>
+            </div>
+
+            <div class="menu-card">
+                <h3>Cappuccino</h3>
+                <p>Creamy coffee with soft foam.</p>
+                <span>Rs. 450</span>
+                <button onclick="addToCart('Cappuccino', 450)">Add to Cart</button>
+            </div>
+
+            <div class="menu-card">
+                <h3>Iced Latte</h3>
+                <p>Cold and refreshing creamy latte.</p>
+                <span>Rs. 500</span>
+                <button onclick="addToCart('Iced Latte', 500)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Desserts -->
+    <section class="menu-section">
+        <h2>𝑫𝒆𝒔𝒔𝒆𝒓𝒕𝒔₊˚⊹♡🍰🍓♡⊹˚₊</h2>
+
+        <div class="menu-items">
+            <div class="menu-card">
+                <h3>Chocolate Cake</h3>
+                <p>Rich and delicious chocolate cake.</p>
+                <span>Rs. 550</span>
+                <button onclick="addToCart('Chocolate Cake', 550)">Add to Cart</button>
+            </div>
+
+            <div class="menu-card">
+                <h3>Cheesecake</h3>
+                <p>Soft and creamy cheesecake.</p>
+                <span>Rs. 600</span>
+                <button onclick="addToCart('Cheesecake', 600)">Add to Cart</button>
+            </div>
+
+            <div class="menu-card">
+                <h3>Cookies</h3>
+                <p>Freshly baked chocolate cookies.</p>
+                <span>Rs. 250</span>
+                <button onclick="addToCart('Cookies', 250)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Snacks -->
+    <section class="menu-section">
+        <h2>𝑺𝒏𝒂𝒄𝒌𝒔‧₊˚ ⋅🥪‧₊˚ ⋅</h2>
+
+        <div class="menu-items">
+            <div class="menu-card">
+                <h3>Chicken Sandwich</h3>
+                <p>Fresh sandwich with chicken and cheese.</p>
+                <span>Rs. 650</span>
+                <button onclick="addToCart('Chicken Sandwich', 650)">Add to Cart</button>
+            </div>
+
+            <div class="menu-card">
+                <h3>French Fries</h3>
+                <p>Crispy golden fries.</p>
+                <span>Rs. 300</span>
+                <button onclick="addToCart('French Fries', 300)">Add to Cart</button>
+            </div>
+
+            <div class="menu-card">
+                <h3>Mini Pizza</h3>
+                <p>Cheesy mini pizza with fresh toppings.</p>
+                <span>Rs. 550</span>
+                <button onclick="addToCart('Mini Pizza', 550)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Cart -->
+    <section class="cart">
+        <h2>𝐘𝐨𝐮𝐫 𝐂𝐚𝐫𝐭 ⤷🛒ˎˊ˗</h2>
+        <ul id="cart-items"></ul>
+        <p id="cart-total">Total: Rs. 0</p>
+        <button onclick="placeOrder()">✦ Place Order ✦</button>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <h3>Lume Cat Café ₍^. .^₎⟆</h3>
+        <p>Made with love, coffee & cats.</p>
+        <p>© 2026 Lume Cat Café. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

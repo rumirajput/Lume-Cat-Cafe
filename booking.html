@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Visit | Lume Cat Café</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">𝓛𝓾𝓶𝓮 ₍^. .^₎⟆</h1>
+            <ul class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="cats.html">Our Cats</a>
+                <a href="booking.html">Book a Visit</a>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Page heading -->
+    <section class="page-header">
+        <p>COME SPEND SOME TIME WITH US</p>
+        <h2>⸙ ˚｡ Book Your Visit ｡˚ ⸙</h2>
+        <p>Coffee, cats and cozy moments are waiting for you!</p>
+    </section>
+
+
+    <!-- Booking form -->
+    <section class="booking-section">
+
+        <!-- Submit hone par script.js ka bookVisit() chalta hai -->
+        <form class="booking-form" onsubmit="bookVisit(event)">
+
+            <h2>✦ ⋆｡ Reserve Your Spot ｡⋆ ✦</h2>
+
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="date">Visit Date</label>
+            <input type="date" id="date" required>
+
+            <label for="time">Visit Time</label>
+            <select id="time" required>
+                <option value="">Select a time</option>
+                <option>11:00 AM</option>
+                <option>12:00 PM</option>
+                <option>01:00 PM</option>
+                <option>02:00 PM</option>
+                <option>03:00 PM</option>
+                <option>04:00 PM</option>
+                <option>05:00 PM</option>
+                <option>06:00 PM</option>
+            </select>
+
+            <label for="guests">Number of Guests</label>
+            <select id="guests" required>
+                <option value="">Select guests</option>
+                <option value="1">1 Guest</option>
+                <option value="2">2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+                <option value="5">5 Guests</option>
+            </select>
+
+            <label for="message">Special Request (Optional)</label>
+            <textarea id="message" rows="4" placeholder="Any special requests?"></textarea>
+
+            <button type="submit">𝐵𝑜𝑜𝓀 𝒩𝑜𝓌 𑄝</button>
+
+            <!-- Thank you message yahan aayega -->
+            <p id="booking-message"></p>
+
+        </form>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <h3>Lume Cat Café ₍^. .^₎⟆</h3>
+        <p>Made with love, coffee & cats.</p>
+        <p>© 2026 Lume Cat Café. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
